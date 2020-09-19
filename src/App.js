@@ -3,13 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const message = `that's whats up my dude! hello hello, suh dude`
+  const environment = process.env.REACT_APP_STAGE
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {message}
         </p>
+  <p>{environment}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
